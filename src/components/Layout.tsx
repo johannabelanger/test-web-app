@@ -16,12 +16,14 @@ const Layout = ({subscriberName}:LayoutProps) => {
         return {};
     }
 
-    return <div className="absolute w-full h-full top-0 right-0 bottom-0 left-0 block bg-body-bgWhite">
+    return <div className="fixed w-full h-full top-0 right-0 bottom-0 left-0 flex flex-col bg-body-bgWhite">
         <Header toggleMenuOpen={toggleMenuOpen} subscriberName={subscriberName}></Header>
-        <SideNav menuOpen={menuOpen}></SideNav>
-        <Content menuOpen={menuOpen}>
-            <Outlet />
-        </Content>
+        <div className="flex flex-1 items-stretch">
+            <SideNav menuOpen={menuOpen}></SideNav>
+            <Content menuOpen={menuOpen}>
+                <Outlet />
+            </Content>
+        </div>
     </div> 
 }
    

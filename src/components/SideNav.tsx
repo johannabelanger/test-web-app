@@ -68,14 +68,14 @@ interface SideNavProps extends PropsWithChildren {
 }
 
 const SideNav = ({menuOpen}: SideNavProps) => {
-    return <div  className={clsx('absolute top-[70px] bottom-0 left-0 overflow-auto sm:flex sm:flex-col sm:justify-start sm:items-stretch pt-5 pb-5 bg-fluidra-aqua-500', menuOpen === undefined && 'hidden sm:w-12 lg:w-64', menuOpen === true && 'w-full sm:w-12 lg:w-64', menuOpen === false && 'hidden')}>
+    return <div  className={clsx('overflow-auto sm:flex sm:flex-col sm:justify-start sm:items-stretch pt-5 pb-5 bg-fluidra-aqua-500', menuOpen === undefined && 'hidden sm:w-12 lg:w-64', menuOpen === true && 'w-full sm:w-12 lg:w-64', menuOpen === false && 'hidden')}>
         {
             options.map(({icon, label, path, followWithDivider}: MenuOption) => {
                 const button = <SideNavMenuButton icon={icon} label={label} path={path} />;
                 return <>
                     {button}
                     {followWithDivider ? 
-                        <div className='flex justify-start sm:justify-center items-center gap-2 px-3 py-2'>
+                        <div className='flex justify-start sm:justify-center items-center gap-2 py-2'>
                             <div className='h-[1px] w-[217px] sm:w-6 lg:w-[217px] mx-3 bg-fluidra-aqua-100'/>
                         </div> : null
                     }
