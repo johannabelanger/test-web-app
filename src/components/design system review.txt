@@ -1,0 +1,39 @@
+The Design Standards document is great, very useful info and tools.
+For the most part, I think the component pages have enough direction for now.
+
+I built out some of our tailwind theme based on the breakpoints and colors, and there were a couple of things I was confused about.
+ - On the Colors page, the body-color says Gray 900 but is blue, so I wasn't sure which was intended.
+ - On the Design Standards document, Secondary is blue, but on the colors page it is gray. Which is correct?
+
+Are we not supporting dark mode right now?
+
+
+
+Action panels
+    At what breakpoint should we switch from mobile to desktop?
+    When would we use simple well vs simple?
+Alerts
+    What is the utility bar vs the header (see Placement)
+Badges
+    I've never seen a square badge. Actions the customer can take?
+Banners
+    Do these go in the same area as alerts?
+Buttons
+    Circle buttons (eg profile button) should use secondary styling?
+Breadcrumbs
+    When should we use filled or not filled?
+Checkboxes
+    Checkbox on left vs right?
+Containers
+    Not sure how to use these
+Description Lists
+    Remove button is slightly cut off in the top left example attachments panel
+Dividers
+    Not sure how to use these either. Examples?
+Feeds
+    Bottom right "commented" icon, is that a square badge?
+Form layouts
+    Would the vertical navigation be inside the content area?
+Text area
+    Resizable?3
+
